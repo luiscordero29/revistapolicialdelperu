@@ -1,0 +1,975 @@
+@font-face {
+  font-family: 'flamabasic';
+  src: url('../font/flama/flama-basic-webfont.woff2') format('woff2'), url('../font/flama/flama-basic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nerislight';
+  src: url('../font/neris/neris-light-webfont.woff2') format('woff2'), url('../font/neris/neris-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'nerisblack';
+    src: url('../font/nerisb/neris-black-webfont.woff2') format('woff2'),
+         url('../font/nerisb/neris-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'chairdroberegular';
+    src: url('../font/char/chairdrobe_regular-webfont.woff2') format('woff2'),
+         url('../font/char/chairdrobe_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'chairdrobe_roundedbold';
+    src: url('../font/charb/chairdrobe_rounded_bold-webfont.woff2') format('woff2'),
+         url('../font/charb/chairdrobe_rounded_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  overflow-x: hidden !important;
+  font-family: 'nerislight', arial;
+}
+hr {
+  margin: .5%;
+  border-top: 1px dotted #ccc;
+}
+
+.pd{
+   padding: 0 1.5% !important;
+}
+.center {
+  margin: 0 auto;
+}
+.container-fluid {
+  padding: 0% !important;
+  margin: 0% !important;
+}
+.container-fluid .row {
+  margin: 0 auto !important;
+}
+.container-fluid .col-md-1,
+.container-fluid .col-md-2,
+.container-fluid .col-md-3,
+.container-fluid .col-md-4,
+.container-fluid .col-md-5,
+.container-fluid .col-md-6,
+.container-fluid .col-md-7,
+.container-fluid .col-md-8,
+.container-fluid .col-md-9,
+.container-fluid .col-md-10,
+.container-fluid .col-md-11,
+.container-fluid .col-md-12 {
+  padding: 0;
+}
+.container-fluid h4 {
+  margin: 0;
+}
+.container .etiqueta {
+  font-family: "nerisblack", arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  padding:0px 5px 1px 5px;
+}
+.container .etiqueta.security {
+  background-color: #1d5925;
+}
+.container .etiqueta.salud {
+  background-color: #24aac3;
+}
+.container .etiqueta.cyber {
+  background-color: #1d44a3;
+}
+.container .etiqueta.especial {
+  background-color: #ae0202;
+}
+.container .cont.primary {
+  background-color: #006B4D;
+}
+.container .cont.security {
+  background-color: #1d5925;
+}
+.container .cont.salud {
+  background-color: #24aac3;
+}
+.container .cont.cyber {
+  background-color: #1d44a3;
+}
+.container .cont.especial {
+  background-color: #E10109;
+}
+
+
+.btn-primary{
+  background-color: #1D5925;
+  padding: 7px 25px;
+}
+
+.btn-primary:hover{
+  background-color: #1D5925;
+  padding: 7px 25px;
+}
+.share .nav > li > a {
+  border-radius: 0px;
+  position: relative;
+  display: block;
+  padding: 0px 5px;
+  line-height: 1px;
+  font-size: .9em;
+  color: #777;
+}
+
+ .share{
+    float: right;
+}
+ .share ul > li {
+  padding: 1px 2px;
+  margin-top: 5px;
+  border-left: solid 1px #777 !important;
+}
+ .share .nav > li {
+  border-left: solid 1px #777;
+}
+ .share .nav > li ~ li  {
+  border-right: solid 1px #777;
+}
+ .share .nav > li > a:focus,
+ .share .nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.hr b{
+  float: left;
+  margin-top: -10px;
+  margin-right: 2%;
+}
+
+.contenido {
+  /*width: 960px;
+  background-color: #fff;
+  margin: 0 auto !important;*/
+  position: relative;
+  top: -230px;
+  padding: 0 21px;
+ 
+}
+.contenido #news_principal #new_day img {
+  width: 100%;
+  height: 345px;
+  margin: 0 auto;
+}
+.contenido #news_principal #new_day #content {
+  background-color: #1d5925;
+  color: #fff;
+  padding: 2% 2% 4%;
+  font-size: 1.5em;
+}
+
+.contenido #news_principal #new_day p{
+  font-size: 1.2em;
+  font-family: "calibri", arial;
+}
+.contenido #news_principal #new_day #content #share {
+  margin-top: -5px;
+  font-size: .8em;
+  float: right;
+}
+.contenido #news_principal #new_day #content #share a {
+  padding: 0px 5px;
+  color: #eee;
+  border-left: 1px solid #eee;
+}
+.contenido #news_principal #news_aside {
+  padding: 0 1%;
+}
+.contenido #news_principal #news_aside .item {
+  border: 2px solid #D3D3D4;
+  padding: 2%;
+  margin: 3% auto;
+}
+.contenido #news_principal #news_aside .item img {
+  width: 100%;
+  height: 100px;
+}
+.contenido #news_principal #news_aside .item .content {
+  padding: 9% 5%;
+}
+.contenido #news_principal #news_aside .item .content h4 {
+  font-weight: bold;
+  color: #444;
+}
+.contenido #news_principal #news_aside .item .content a {
+  font-size: 1.2em;
+  color: #1d5925;
+  font-weight: bold;
+}
+.contenido #news_principal #news_aside #estadistica_policial {
+  font-size: 1.2em;
+  background-color: #b78001;
+  color: #fff;
+  padding: 5%;
+}
+.contenido #news_principal #news_aside #estadistica_policial i {
+  font-size: 2em;
+  margin-left: 10%;
+}
+.contenido #news_principal #news_aside #estadistica_policial p {
+  margin-top: 4%;
+}
+
+.contenido #news_dest.row{
+    padding: 0 16px !important;
+}
+.contenido #news_dest .item {
+  padding: .5%;
+ 
+}
+.contenido #news_dest .item img {
+  width: 100%;
+}
+.contenido #news_dest .item .info {
+  background-color: #deecdb;
+  padding: 1%;
+  padding-left: 2%;
+  height: 100px;
+  margin: 0 !important;
+}
+.contenido #news_dest .item .info .time {
+  text-align: right;
+  font-weight: bold;
+  padding-left: 0%;
+  font-size: .7em;
+  line-height: 2.5em;
+  text-transform: uppercase;
+}
+.contenido #news_dest .item .info .share .nav > li > a {
+  border-radius: 0px;
+  position: relative;
+  display: block;
+  padding: 0px 5px;
+  line-height: 1px;
+  font-size: .9em;
+  color: #777;
+}
+.contenido #news_dest .item .info .share{
+    float: right;
+}
+.contenido #news_dest .item .info .share ul > li {
+  padding: 1px 2px;
+  margin-top: 5px;
+  border-left: solid 1px #777 !important;
+}
+.contenido #news_dest .item .info .share .nav > li {
+  border-left: solid 1px #777;
+}
+.contenido #news_dest .item .info .share .nav > li ~ li {
+  border-right: solid 1px #777;
+}
+.contenido #news_dest .item .info .share .nav > li > a:focus,
+.contenido #news_dest .item .info .share .nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+.contenido #news_dest .item .info a {
+  font-family: 'chairdroberegular', 'calibri', arial;
+  margin: 3% auto;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #555;
+  letter-spacing: 1px;
+}
+.contenido #news_last #news_content {
+  border-right: 1px dotted #ccc;
+  padding: 0% 2%;
+}
+.contenido #news_last #news_content hr {
+     margin: 4.08% auto;
+}
+.contenido #news_last #news_content h4 {
+  font-size: 1.7em;
+  font-family: "chairdrobe_roundedbold", "calibri", arial;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+  color: #555;
+}
+.contenido #news_last #news_content .info {
+  padding: 2%;
+}
+.contenido #news_last #news_content .info .head {
+  padding: 0% !important;
+}
+.contenido #news_last #news_content .info span {
+    margin: 5px 10px 0px 10px;
+}
+.contenido #news_last #news_content .info span.share {
+  margin-top: -5px !important;
+}
+.contenido #news_last #news_content .info .time {
+  text-align: right;
+  font-weight: bold;
+  padding-left: 0%;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+
+.contenido #news_last #news_content .info .share .nav {
+  margin-top: 4px;
+}
+.contenido #news_last #news_content .info .share .nav > li > a {
+  border-radius: 0px;
+  position: relative;
+  display: block;
+  padding: 0px 5px;
+  line-height: 1px;
+  font-size: .9em;
+  color: #777;
+}
+.contenido #news_last #news_content .info .share ul > li {
+  padding: 1px 2px;
+  border-left: solid 1px #777 !important;
+}
+.contenido #news_last #news_content .info .share .nav > li {
+  border-left: solid 1px #777;
+}
+.contenido #news_last #news_content .info .share .nav > li ~ li {
+  border-right: solid 1px #777;
+}
+.contenido #news_last #news_content .info .share .nav > li > a:focus,
+.contenido #news_last #news_content .info .share .nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.contenido #news_last #news_content .info_news{
+    
+}
+.contenido #news_last #news_content .info_news .image{
+    padding-right: 0px !important;
+}
+.contenido #news_last #news_content .info_news img {
+  width: 100%;
+}
+.contenido #news_last #news_content .info_news p {
+  font-size: 1.1em;
+  font-family: arial;
+  letter-spacing: 1.1px;
+}
+.contenido #news_last #news_ultimas .news {
+    padding: 0% 2.4% 0% 1.1%;
+}
+.contenido #news_last #news_ultimas .news div.content {
+  background-color: #2D6325;
+  color: #fff;
+  padding-bottom: 35%;
+}
+.contenido #news_last #news_ultimas .news div.content .header {
+  width: 100%;
+  padding: 1% 4%;
+  background-color: #173c13; 
+  margin-bottom: 6%;
+}
+.contenido #news_last #news_ultimas .news div.content .header h4 {
+  font-family: "nerisblack";
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item {
+  padding: 0 5%;
+  background-color: #2D6325;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item p{
+  margin: 0 !important;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info {
+  padding: 2% 0;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .time {
+  text-align: right;
+  font-weight: bold;
+  padding-left: 0%;
+  font-size: .7em;
+  text-transform: uppercase;
+  margin-left: 8%;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav {
+  margin-top: 10px;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li > a {
+  border-radius: 0px;
+  position: relative;
+  display: block;
+  padding: 0px 5px;
+  line-height: 1px;
+  font-size: .9em;
+  color: #fff;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share ul > li {
+  padding: 1px 2px;
+  margin-top: -5px;
+  border-left: solid 1px #fff !important;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li {
+  border-left: solid 1px #fff;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li ~ li {
+  border-right: solid 1px #fff;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li > a:focus,
+.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .etiqueta {
+  background-color: #fff !important;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .etiqueta.especial {
+  color: #ae0202;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .etiqueta.salud {
+  color: #24aac3;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .etiqueta.cyber {
+  color: #1d44a3;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .etiqueta.security {
+  color: #1d5925;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item .img img {
+  width: 100%;
+}
+.contenido #news_last #news_ultimas .news div.content .info-item hr {
+  margin: 5% auto;
+  border-style: solid;
+  border-color: #fff;
+}
+#aside_publi #news_ultimas_aside,
+.content-header #news_ultimas_aside,
+.contenido #news_last #news_ultimas #news_ultimas_aside {
+  padding: 0 4% 0 0;
+}
+
+#aside_publi #news_ultimas_aside{
+   padding: 1.5% 4% 0 0;|
+}
+#aside_publi #news_ultimas_aside .item,
+.content-header #news_ultimas_aside .item,
+.contenido #news_last #news_ultimas #news_ultimas_aside .item,
+#news_ultimas_aside .item{
+     margin-left: -19px !important;
+     margin-bottom: 3%;
+}
+#aside_publi #news_ultimas_aside .item img,
+.content-header #news_ultimas_aside .item img,
+.contenido #news_last #news_ultimas #news_ultimas_aside .item img {
+  width: 100%;
+}
+#aside_publi #news_ultimas_aside .item .cont,
+.content-header #news_ultimas_aside .item .cont,
+#news_ultimas_aside .item .cont,
+.contenido #news_last #news_ultimas #news_ultimas_aside .item .cont {
+  font-size: .9em;
+  padding: 2%;
+  border-radius: 5px;
+  margin: 3% 0 !important;
+  color: #fff;
+}
+#aside_publi #news_ultimas_aside .item .cont .call,
+.content-header #news_ultimas_aside .item .cont .call,
+.contenido #news_last #news_ultimas #news_ultimas_aside .item .cont .call,
+#news_ultimas_aside .item .cont .call{
+    padding: 0% !important;
+}
+
+
+
+
+#aside_publi #news_ultimas_aside .item .cont .call:nth-child(3),
+.content-header #news_ultimas_aside .item .cont .call:nth-child(3),
+#news_ultimas_aside .item .cont .call:nth-child(3),
+.contenido #news_last #news_ultimas #news_ultimas_aside .item .cont .call:nth-child(3){
+    font-weight: bold;
+}
+
+
+#aside_publi #news_ultimas_aside .zonas_p,
+.content-header #news_ultimas_aside .zonas_p,
+.contenido #news_last #news_ultimas .zonas_p {
+     padding: 3% 5.5% !important;
+}
+
+#aside_publi #news_ultimas_aside #zonas_peligro,
+.content-header #news_ultimas_aside #zonas_peligro,
+.contenido #news_last #news_ultimas #zonas_peligro {
+  border-radius: 7px;
+  background-color: #1d5925;
+  padding: 0 !important;
+}
+#senati_publi img{
+    height: 352px;
+}
+
+#aside_publi #news_ultimas_aside #zonas_peligro .header,
+.content-header #news_ultimas_aside #zonas_peligro .header,
+.contenido #news_last #news_ultimas #zonas_peligro .header {
+  padding: 1%;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+#aside_publi #news_ultimas_aside #zonas_peligro .header h5,
+.content-header #news_ultimas_aside #zonas_peligro .header h5,
+.contenido #news_last #news_ultimas #zonas_peligro .header h5 {
+  font-size: 1.3em;
+  font-weight: bold !important;
+}
+#aside_publi #news_ultimas_aside #zonas_peligro .header h5 span,
+.content-header #news_ultimas_aside #zonas_peligro .header h5 span,
+.contenido #news_last #news_ultimas #zonas_peligro .header h5 span {
+  color: #CDBA1E;
+}
+
+
+
+.container-videos{
+     background-color: #323232;
+     position: relative;
+     top: -200px;
+     padding: 0 7%;
+}
+
+#videos{
+    font-family: "calibri", arial;
+}
+#videos  h3 {
+  font-family:  'nerislight',arial;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 2% 6%;
+  color: #fff;
+  font-weight: lighter !important;
+  background-color: #1d5925;
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  left: -15px;
+}
+#videos  #slider_videos{
+    margin-top: 5%;
+}
+#videos  #slider_videos .item {
+  width: 100%;
+  padding: 1%;
+}
+#videos  #slider_videos .item img {
+  width: 92%;
+}
+#videos  #slider_videos .item a.title {
+  margin-top: 5%;
+  color: #fff;
+  line-height: 1.1em;
+  padding-right: 10px;
+}
+#videos .owl-carousel{
+  width: 97%;
+}
+
+#videos  .owl-theme .owl-controls .owl-page span {
+  background-color: #B6B6B6 !important;
+}
+#videos .owl-theme .owl-controls .owl-page.active span {
+  background-color: #219A65 !important;
+}
+
+#videos .owl-theme .owl-controls .owl-buttons {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+#videos .owl-theme .owl-controls .owl-buttons div {
+  background: none;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+#videos .owl-theme .owl-controls .owl-buttons div i {
+  font-size: 1.9em;
+}
+#videos .owl-theme .owl-controls .owl-buttons .owl-prev {
+  position: absolute;
+  top: -37px;
+  left: 37%;
+}
+#videos .owl-theme .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  top: -37px;
+  right: 37%;
+}
+
+
+.content-header #news_ultimas_aside{
+  padding: 0 1% 0 0;
+}
+
+/*
+    NOTICIAS PRINCIPAL
+*/
+
+#desarrollo_news h2 {
+  font-family: verdana, 'chairdrobe_roundedbold';
+  font-size: 3.5em;
+  color: #000;
+  letter-spacing: 1px;
+  width: 90%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+#aside__desarrollo #news_ultimas_aside .item{
+    margin-bottom: 3% !important;
+}
+
+#desarrollo_news p {
+   font-family: verdana, 'chairdroberegular';
+   font-size: 1.5em;
+   width: 99%;
+   line-height: 1.1em;
+}
+
+#desarrollo{
+  font-family: arial;
+}
+
+#desarrollo #data{
+  font-size: 1.5em;
+  padding: 1% 0 1.5%;
+  width: 97%;
+}
+#desarrollo .time{
+   color: #1D5925;
+   font-weight: bold;
+}
+#desarrollo .dir{
+  color: #000;
+}
+
+#desarrollo .content p{
+  font-size: 1.2em;
+  margin-bottom: 3%;
+  text-align: left;
+}
+
+.view{
+   font-family: "nerisblack", arial;
+  font-weight: bold;
+  padding: .5% 2%;
+  color: #555;
+}
+
+#about p{
+  font-family: arial;
+  font-size: 1.1em;
+  line-height:1.42em;
+  margin-bottom: 2%;
+  text-align: justify;
+  color: #000;
+}
+h1.tittles{
+  font-family: verdana;
+  font-size: 2em;
+  border-bottom: 2px solid #2F6726;
+  display: inline-block;
+  line-height: 1.2em;
+  color: #000;
+
+}
+
+#nosotros img{
+  width: 170px;
+}
+
+#mision p{
+  width: 90%;
+}
+
+#compromiso #img-people{
+  text-align: center;
+  padding: 3%;
+}
+#compromiso img{
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  border: 4px solid #2F6726;
+}
+
+
+/*
+  seguridad_ciudadana
+*/
+
+#seguridad_ciudadana #head h1{
+  font-family: verdana;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #2F6726;
+}
+#seguridad_ciudadana #head p{
+  font-family: arial;
+  font-size: 1.2em;
+  color: #000;
+}
+
+#seguridad_ciudadana #head #img_head{
+  padding: .5% 1.5%;
+}
+#seguridad_ciudadana #head #img_head img{
+  width: 450px;
+  height: 250px;
+}
+
+
+.seguridad #news_last #news_content {
+  border-right: 0px dotted #ccc;
+  padding: 1% 2%;
+}
+
+.news_ult{
+  padding-left: 0 !important;
+}
+
+.news_ult .news{
+  padding: 0% 1.5% 0% 0% !important;;
+}
+
+#news_ultimas_aside .item.a img{
+  border-radius: 7px
+}
+
+
+
+/*
+  VIOLENCIA FAMILIAR
+*/
+
+#violecia_familiar{
+  padding-top: 0px;
+  font-family: arial;
+}
+#violecia_familiar h1{
+  font-family: verdana;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #A10101;
+  color: #fff;
+  text-align: center;
+  padding: 2% 10%;
+  line-height: 1.2em;
+}
+
+#violecia_familiar #video iframe{
+  width: 100% !important;
+  height: 480px !important;
+}
+#violecia_familiar #video p{
+  float: left;
+  margin-top: 1%;
+}
+#violecia_familiar #video .share{
+  font-size: 1.5em;
+  padding: 1% 0 1.5%;
+}
+
+#content_violencia h2{
+  font-family: verdana;
+  font-weight: bold;
+  color: #2F6726;
+  width: 80%;
+}
+
+#content_violencia h3{
+  font-family: arial;
+  font-size: 2.5em;
+  color: #4A4A4A;
+}
+#content_violencia p{
+  font-family: arial;
+  color: #4C4C4C;
+  font-size: 1.2em;
+}
+
+
+/*
+  PREVENCION
+*/
+#seguridad_ciudadana .prevencion span{
+  color: #000;
+  font-family: verdana;
+  font-size: 1.3em;
+}
+
+
+/*
+  SALUD
+*/
+
+#salud .new-first img{
+  width: 100%;
+}
+
+#salud .new-first .meta{
+  background-color: #24A8BD;
+}
+
+ #salud .new-first .meta .share .nav>li>a {
+  border-radius: 0px;
+  color: #d7e8d6;
+    position: relative;
+    display: block;
+    padding: 0px 5px;
+    line-height: 1px;
+}
+ #salud .new-first .meta .share .nav > li {
+  border-left:  solid 1px #d7e8d6 !important;
+}
+ #salud .new-first .meta .share .nav > li ~ li {
+  border-right: solid 1px #d7e8d6 !important;
+}
+
+
+/*
+  ciber
+*/
+
+#ciber .new-first img{
+  width: 100%;
+}
+
+#ciber .new-first .meta{
+  background-color: #1D44A3;
+}
+
+ #ciber .new-first .meta .share .nav>li>a {
+  border-radius: 0px;
+  color: #d7e8d6;
+    position: relative;
+    display: block;
+    padding: 0px 5px;
+    line-height: 1px;
+}
+ #ciber .new-first .meta .share .nav > li {
+  border-left:  solid 1px #d7e8d6 !important;
+}
+ #ciber .new-first .meta .share .nav > li ~ li {
+  border-right: solid 1px #d7e8d6 !important;
+}
+
+
+/*
+    CONTACTO
+*/
+
+.modal-content{
+  border-radius: 10px;
+}
+.modal-header{
+  padding: 7px !important;
+  border: none;
+  background:  #2F6726 !important;
+  border-radius: 6px 6px 0 0px;
+}
+.modal-body{
+  padding: 40px 40px 60px;
+}
+.modal-body #tittle{
+    padding: 10px 0px 19px;
+    text-align: center;
+    background: #2F6726 !important;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.modal-body #tittle h1{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#form_contact .form-control{
+   padding: 20px 12px;
+   border: 1px solid #CAEADB;
+}
+
+#form_contact button{
+  float: right;
+}
+
+.modal-body #tittle img{
+    float: right;
+    margin-top: -60px;
+}
+
+.modal-footer{
+  padding: 7px !important;
+  border: none;
+  background:  #2F6726 !important;
+  border-radius: 0px 0px 6px 6px;
+}
+
+
+
+
+footer{
+    margin-top: -200px
+}
+
+
+
+
+
+
+
+/*========
+  
+  RESPONSIVE DESING
+    =========*/
+
+@media (max-width: 1198px){
+    nav{
+       
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+       /* width: 95%;*/
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
