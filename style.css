@@ -389,3 +389,6 @@ a.category-link:hover{
     color: #4C4C4C;
     font-size: 1.2em;
 }
+.search a {
+    color: #1d5925;
+}

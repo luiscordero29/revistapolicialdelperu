@@ -6,7 +6,7 @@
         			<div class="content-header-shadow"></div>
         			<div class="content-header">
         				<div class="row" id="desarrollo_news">
-        				    <div class="col-md-12">
+        				    <div class="col-xs-12">
         				        <h2>
         							<?php the_title() ?>
         						</h2>

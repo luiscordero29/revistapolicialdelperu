@@ -13,12 +13,12 @@
         foreach ($posts as $post):
     ?>
 		<div class="row item">
-			<div class="col-md-12">
+			<div class="col-xs-12">
 				<a href="<?php echo get_permalink($post->ID); ?>">
 					<h4><?php echo get_the_title($post->ID); ?></h4>
 				</a>
 				<div class="row info">
-					<div class="col-md-12 head">
+					<div class="col-xs-12 head">
 						<?php 
 							$post_categories = wp_get_post_categories( $post->ID );
 							foreach($post_categories as $c):
@@ -48,14 +48,14 @@
 					</div>
 				</div>
 				<div class="info_news row">
-					<div class="col-md-6 image">
+					<div class="col-xs-6 image">
 						<?php if (has_post_thumbnail()): ?>
 							<img src="<?php the_post_thumbnail_url( $post->ID, 'medium' ); ?>" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
 						<?php else: ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/image/post-especial.png" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
 						<?php endif ?>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xs-6">
 						<p>
 							<?php the_excerpt($post->ID); ?>
 						</p>
@@ -66,8 +66,8 @@
 		<hr>
 	<?php endforeach; ?>					
 	</div>
-	<div id="news_ultimas" class="col-md-4 news_ult">
-		<div class="col-md-12 news">
+	<div id="news_ultimas" class="col-xs-4 news_ult">
+		<div class="col-xs-12 news">
             <div class="content">
                 <div class="header">
                     <h4>Ultimas Noticias</h4>

@@ -14,18 +14,17 @@
                         <?php get_template_part( 'template/header', 'aside' ); ?>
                     </div>
                 </div>                            
-            <hr>
         	</div>
         </div>
     </div>
 </div>
 <div class="container contenido seguridad">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-xs-9">
             <?php get_template_part( 'template/aside', 'news-dest-page' ); ?>           
             <?php get_template_part( 'template/aside', 'news-page' ); ?>                     
         </div>
-        <div class="col-md-3" id="aside_publi">
+        <div class="col-xs-3" id="aside_publi">
             <?php get_template_part( 'template/aside', 'page' ); ?>
         </div>
     </div>

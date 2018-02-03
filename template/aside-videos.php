@@ -1,7 +1,7 @@
 <div class="container-videos">
     <div class="container">
         <section class="row" id="videos">
-    		<div class="col-md-4">
+    		<div class="col-xs-4">
     			<h3>Zona de Videos Revista Policial</h3>
     		</div>
     		<div class="row" id="slider_videos">
@@ -17,7 +17,7 @@
                     $posts = get_posts( $args );
                     foreach ($posts as $post):
                 ?>
-                	<div class="col-md-3 item">
+                	<div class="col-xs-3 item">
     					<a href="<?php echo get_permalink($post->ID); ?>">
                             <?php if (has_post_thumbnail()): ?>
                                 <img src="<?php the_post_thumbnail_url( $post->ID, 'post-destacado' ); ?>" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
