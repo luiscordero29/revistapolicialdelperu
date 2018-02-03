@@ -340,3 +340,52 @@ a.category-link:hover{
 .posts_nav_link a {
     color: #1d5925;
 }
+.page-default {
+    font-family: arial;
+    font-size: 1.2em;
+    color: #000;
+}
+.page-default h1 {
+    font-family: flamabasic;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2F6726;
+}
+.page-default h2 {
+    font-family: flamabasic;
+    font-size: 2em;
+    border-bottom: 2px solid #2F6726;
+    display: inline-block;
+    line-height: 1.2em;
+    color: #000;
+}
+.page-default h3 {
+    color: #000;
+    font-family: flamabasic;
+    font-size: 1.3em;
+}
+.page-full h1 {
+    font-family: flamabasic;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #A10101;
+    color: #fff;
+    text-align: center;
+    padding: 2% 10%;
+    line-height: 1.2em;
+}
+.page-full h2 {
+    font-family: flamabasic;
+    font-weight: bold;
+    color: #2F6726;
+}
+.page-full h3 {
+    font-family: arial;
+    font-size: 2.5em;
+    color: #4A4A4A;
+}
+.page-full {
+    font-family: arial;
+    color: #4C4C4C;
+    font-size: 1.2em;
+}
