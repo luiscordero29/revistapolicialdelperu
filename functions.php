@@ -126,7 +126,7 @@ if (!function_exists('get_mainmenu')) {
                 foreach ($menu_item->classes  as $c) {
                     $class = $class.' '.$c;
                 }
-                $menu_list .= '<li class="border-right">';
+                $menu_list .= '<li class="border-right '. vince_check_active_menu($menu_item) .'">';
                 $menu_list .= '<a target="' . $menu_item->target . '" class="item-' . $menu_item->ID . '" href="'. $menu_item->url .'">';
                 $menu_list .= $menu_item->title;
                 $menu_list .= '</a>';
@@ -140,6 +140,14 @@ if (!function_exists('get_mainmenu')) {
             return '';
         }
     }
+}
+
+function vince_check_active_menu( $menu_item ) {
+    $actual_link = ( isset( $_SERVER['HTTPS'] ) ? "https" : "http" ) . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    if ( $actual_link == $menu_item->url ) {
+        return 'active';
+    }
+    return '';
 }
 
 # menu

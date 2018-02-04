@@ -155,7 +155,12 @@ hr {
   background-color: transparent;
 }
 
+
+hr.default{
+	margin: 4% .5% 2% !important;
+}
 .hr b{
+  font-family: 'nerisblack';
   float: left;
   margin-top: -10px;
   margin-right: 2%;
@@ -169,6 +174,10 @@ hr {
   top: -230px;
   padding: 0 21px;
  
+}
+
+a {
+    text-decoration: none;
 }
 .contenido #news_principal #new_day img {
   width: 100%;
@@ -294,6 +303,11 @@ hr {
   font-weight: bold;
   color: #555;
   letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.contenido #news_last{
+	margin-top: 2%;
 }
 .contenido #news_last #news_content {
   border-right: 1px dotted #ccc;
@@ -301,6 +315,10 @@ hr {
 }
 .contenido #news_last #news_content hr {
      margin: 4.08% auto;
+}
+
+.contenido #news_last #news_content a {
+    text-decoration: none;
 }
 .contenido #news_last #news_content h4 {
   font-size: 1.7em;
@@ -396,9 +414,14 @@ hr {
   padding: 0 5%;
   background-color: #2D6325;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item p{
+.contenido #news_last #news_ultimas .news div.content .info-item a.title{
   margin: 0 !important;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
 }
+
+
 .contenido #news_last #news_ultimas .news div.content .info-item .info {
   padding: 2% 0;
 }
@@ -410,10 +433,15 @@ hr {
   text-transform: uppercase;
   margin-left: 8%;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav {
+
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share{
+    margin-top: -5px;
+}
+
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share .nav {
   margin-top: 10px;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li > a {
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share .nav > li > a {
   border-radius: 0px;
   position: relative;
   display: block;
@@ -422,19 +450,19 @@ hr {
   font-size: .9em;
   color: #fff;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share ul > li {
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share ul > li {
   padding: 1px 2px;
   margin-top: -5px;
   border-left: solid 1px #fff !important;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li {
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share .nav > li {
   border-left: solid 1px #fff;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li ~ li {
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share .nav > li ~ li {
   border-right: solid 1px #fff;
 }
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li > a:focus,
-.contenido #news_last #news_ultimas .news div.content .info-item .info .share .nav > li > a:hover {
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share .nav > li > a:focus,
+.contenido #news_last #news_ultimas .news div.content .info-item .meta .share .nav > li > a:hover {
   text-decoration: none;
   background-color: transparent;
 }
@@ -482,6 +510,7 @@ hr {
 .contenido #news_last #news_ultimas #news_ultimas_aside .item img {
   width: 100%;
 }
+#aside_publi .cont,
 #aside_publi #news_ultimas_aside .item .cont,
 .content-header #news_ultimas_aside .item .cont,
 #news_ultimas_aside .item .cont,
@@ -492,6 +521,8 @@ hr {
   margin: 3% 0 !important;
   color: #fff;
 }
+
+#aside_publi .cont .call,
 #aside_publi #news_ultimas_aside .item .cont .call,
 .content-header #news_ultimas_aside .item .cont .call,
 .contenido #news_last #news_ultimas #news_ultimas_aside .item .cont .call,
@@ -501,7 +532,7 @@ hr {
 
 
 
-
+#aside_publi .cont .call:nth-child(3),
 #aside_publi #news_ultimas_aside .item .cont .call:nth-child(3),
 .content-header #news_ultimas_aside .item .cont .call:nth-child(3),
 #news_ultimas_aside .item .cont .call:nth-child(3),
@@ -553,11 +584,11 @@ hr {
      background-color: #323232;
      position: relative;
      top: -200px;
-     padding: 0 7%;
 }
 
 #videos{
     font-family: "calibri", arial;
+    margin: 0 !important;
 }
 #videos  h3 {
   font-family:  'nerislight',arial;
@@ -570,26 +601,27 @@ hr {
   position: absolute;
   top: 0px;
   margin: 0;
-  left: -15px;
+  left: 0px;
 }
 #videos  #slider_videos{
-    margin-top: 5%;
+    margin: 5% 0 0;
 }
 #videos  #slider_videos .item {
   width: 100%;
   padding: 1%;
 }
 #videos  #slider_videos .item img {
-  width: 92%;
+  width: 97%;
 }
 #videos  #slider_videos .item a.title {
   margin-top: 5%;
   color: #fff;
   line-height: 1.1em;
   padding-right: 10px;
+  text-decoration: none;
 }
 #videos .owl-carousel{
-  width: 97%;
+  width: 99%;
 }
 
 #videos  .owl-theme .owl-controls .owl-page span {
@@ -921,6 +953,32 @@ h1.tittles{
   float: right;
 }
 
+span .wpcf7-not-valid {
+    border: 1px solid #ff0000 !important;
+}
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+    color: #D8000C;
+    background-color: #FFBABA;
+    border: 0;
+    padding: 10px;
+}
+.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    border: 0;
+    padding: 10px;
+}
+div.wpcf7-mail-sent-ok:before,div.wpcf7-validation-errors:before {
+    font: 26px/30px dashicons;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+div.wpcf7-mail-sent-ok:before {
+    content: "\f147";
+}
+div.wpcf7-validation-errors:before {
+    content: "\f158";
+}
 .modal-body #tittle img{
     float: right;
     margin-top: -60px;
@@ -939,8 +997,6 @@ h1.tittles{
 footer{
     margin-top: -200px
 }
-
-
 
 
 

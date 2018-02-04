@@ -15,6 +15,10 @@
     </div>
 </div>
 <div class="container contenido seguridad">
+    <div class="hr">
+        <b>VEA TAMBIEN</b>
+        <hr>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <?php get_template_part( 'template/aside', 'news-dest' ); ?>           

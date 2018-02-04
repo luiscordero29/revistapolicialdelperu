@@ -49,6 +49,7 @@
     <div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <div class="modal-header"></div>
                 <div class="modal-body" id="form_contact">
                     <div id="tittle">
                         <h1>Contactenos</h1>
@@ -57,7 +58,8 @@
                     <?php
                         echo do_shortcode('[contact-form-7 id="36" title="Formulario de Contacto Modal"]');
                     ?>
-                </div>        
+                </div>
+                <div class="modal-footer"></div>        
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
@@ -77,7 +79,8 @@
                	itemsDesktopSmall : [979,3],
     		    stopOnHover : true,
     		    navigation : true,
-                navigationText : [prev, next]
+                navigationText : [prev, next],
+                autoWidth: true
     		});
                   // Custom Navigation Events
             $(".next").click(function(){

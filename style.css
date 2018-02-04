@@ -84,7 +84,7 @@ footer #pre-footer {
     color: #fff;
     padding-top: 25px;
     padding-bottom: 15px;
-    padding: 25px 60px 15px 60px;
+    padding: 25px 60px 15px 77px;
 }
 footer #pre-footer h5 {
   	color: #97da8d;
@@ -259,6 +259,7 @@ a.category-link:hover{
 #ultimas-noticias .info-item a:hover.title {
     text-decoration: none;
 }
+.contenido #news_last #news_ultimas .info-item .meta,
 #ultimas-noticias .info-item .meta {
     margin-top: 10px;
 }
@@ -286,6 +287,7 @@ a.category-link:hover{
     text-transform: uppercase;
 }
 
+#news_ultimas .info-item .meta center,
 #ultimas-noticias .info-item .meta center {
     display: inline-block;
     margin-left: 8%;

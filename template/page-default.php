@@ -19,6 +19,7 @@
     </div>
 </div>
 <div class="container contenido seguridad">
+    <hr class="default">
     <div class="row">
         <div class="col-xs-9">
             <?php get_template_part( 'template/aside', 'news-dest-page' ); ?>           
