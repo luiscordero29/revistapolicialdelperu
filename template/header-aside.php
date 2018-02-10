@@ -42,7 +42,7 @@
 						?>
 					</div>
 					<a href="<?php echo get_permalink($post->ID); ?>">
-						<?php echo get_the_title($post->ID); ?>
+						<?php the_max_charlength(get_the_title($post->ID),60); ?>
 					</a>
 				</div>
 			</div>

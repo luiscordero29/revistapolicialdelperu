@@ -28,7 +28,7 @@
 	<div class="meta">
 		<div class="title" id="content">
 			<a href="<?php echo get_permalink($post->ID); ?>">
-				<?php echo get_the_title($post->ID); ?>
+				<?php the_max_charlength(get_the_title($post->ID),80); ?>
 			</a>
 		</div>
 		<div class="share">

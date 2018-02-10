@@ -77,7 +77,12 @@
                     <div class="container-fluid">
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav">                            
+                            <li class="border-right">
+                                <a target="" class="item-home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo_nav.png">
+                                </a>
+                            </li>                            
                             <?php echo get_mainmenu('menu-main'); ?>
                         </ul>
                         <?php get_search_form(); ?>

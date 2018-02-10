@@ -86,6 +86,7 @@ hr {
   font-weight: bold;
   color: #fff;
   padding:0px 5px 1px 5px;
+  letter-spacing: 0px;
 }
 .container .etiqueta.security {
   background-color: #1d5925;
@@ -299,15 +300,14 @@ a {
 .contenido #news_dest .item .info a {
   font-family: 'chairdroberegular', 'calibri', arial;
   margin: 3% auto;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #555;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   text-decoration: none;
 }
-
 .contenido #news_last{
-	margin-top: 2%;
+	/*margin-top: 2%;*/
 }
 .contenido #news_last #news_content {
   border-right: 1px dotted #ccc;
@@ -321,7 +321,7 @@ a {
     text-decoration: none;
 }
 .contenido #news_last #news_content h4 {
-  font-size: 1.7em;
+  font-size: 1.9em;
   font-family: "chairdrobe_roundedbold", "calibri", arial;
   letter-spacing: 1px;
   font-weight: bold;
@@ -396,7 +396,9 @@ a {
 .contenido #news_last #news_ultimas .news div.content {
   background-color: #2D6325;
   color: #fff;
-  padding-bottom: 35%;
+ /* padding-bottom: 35%;*/
+  height: 1290px;
+overflow: hidden;
 }
 .contenido #news_last #news_ultimas .news div.content .header {
   width: 100%;
@@ -666,11 +668,11 @@ a {
 
 #desarrollo_news h2 {
   font-family: verdana, 'chairdrobe_roundedbold';
-  font-size: 3.5em;
+  font-size: 2.7em;
   color: #000;
   letter-spacing: 1px;
   width: 90%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   font-weight: bold;
 }
 
@@ -683,6 +685,7 @@ a {
    font-size: 1.5em;
    width: 99%;
    line-height: 1.1em;
+   margin-bottom: 3%;
 }
 
 #desarrollo{
@@ -703,9 +706,14 @@ a {
 }
 
 #desarrollo .content p{
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 3%;
   text-align: left;
+}
+
+#desarrollo .content p iframe{
+    width: 90% !Important;
+    height: 350px !Important;
 }
 
 .view{

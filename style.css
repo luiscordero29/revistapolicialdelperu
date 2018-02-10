@@ -14,16 +14,22 @@ section.top-banner {
 }
 section.top-banner-text {
   	background-color: #b78001;
-  	padding-top: 15px;
-	padding-bottom: 15px;
+  	padding-top: 7px;
+	padding-bottom: 7px;
 	color: #fff;
+    text-align: center;
 }
 section.top-banner-text p {
     margin: 0px;
 }
 .header-logo {
-	margin-top: 30px;
+	margin-top: 85px;
 	margin-bottom: 30px;
+}
+
+
+.header-logo img{
+    width: 20%;
 }
 #navbar-header .navbar-collapse {
     padding-right: 0px;
@@ -39,6 +45,7 @@ section.top-banner-text p {
     min-height: 50px;
     margin-bottom: 20px;
     border: 0px none transparent;
+    margin-top: 1.5%;
 }
 #navbar-header.navbar-default .navbar-collapse, 
 #navbar-header.navbar-default .navbar-form {
@@ -50,8 +57,16 @@ section.top-banner-text p {
 	color: #fff;
 	border-right: 1px solid #2a7f35;
 	line-height: .8em;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
+#navbar-header .navbar-nav > li > a > img{
+    margin-top: -15px;
+    /* display: none; */
+    width: 35px;
+    /* height: 20px; */
+}
 #navbar-header.navbar-default .navbar-nav>li>a>i{
     font-size: 1.6em !important;
     line-height: 13px !important;
@@ -61,18 +76,23 @@ section.top-banner-text p {
     color: #36a645;
     background-color: transparent;
 }
-
+#navbar-header.navbar-default .navbar-nav > .active > a, 
+#navbar-header.navbar-default .navbar-nav > .active > a:focus, 
+#navbar-header.navbar-default .navbar-nav > .active > a:hover {
+	color: #36a645;
+    background-color: transparent;
+}
 #search-input{
     margin-top: -1px;
 }
 #banner-gun {
     width: 100%;
-    height: 300px;
+    height: 370px;
     background-color: #1d5925;
     background-image: url("assets/image/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px -20px;
+    background-position: 0px -25px;
     position: absolute;
     z-index: -100;
 }
@@ -140,6 +160,7 @@ footer #copy p {
     font-size: 1.5em;
 	background-color: #1d5925;
   	color: #fff;
+  	padding-top: 12px;
   	padding-bottom: 45px;
     padding-right: 15px;
     padding-left: 10px;
@@ -147,7 +168,7 @@ footer #copy p {
 .new-first .meta .title {
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 15px;
+	padding-top: 14px;
 }
 .new-first .meta .title a {
     font-family: 'chairdroberegular', 'calibri', arial;
@@ -254,7 +275,7 @@ a.category-link:hover{
 }
 #ultimas-noticias .info-item a.title {
     color: #fff;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 #ultimas-noticias .info-item a:hover.title {
     text-decoration: none;

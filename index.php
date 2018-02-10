@@ -8,7 +8,7 @@
 						<div class="col-xs-8">
 							<?php get_template_part( 'template/header', 'first' ); ?>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-xs-4" style="padding-left: 0px;">
 							<?php get_template_part( 'template/header', 'aside' ); ?>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 								</div>
 								<div class="col-xs-6">
 									<p>
-										<?php the_excerpt(); ?>
+										<?php the_excerpt_max_charlength(160); ?>
 									</p>
 								</div>
 							</div>
