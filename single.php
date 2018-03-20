@@ -36,7 +36,8 @@
         								<span class="share">
         									<ul class="nav nav-pills pull-right"> 
         										<li role="presentation"><a target="_blank" data-href="<?php echo get_permalink($post->ID); ?>" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($post->ID); ?>"><i class="fa fa-facebook"></i></a></li>
-        										<li role="presentation"><a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo get_the_title($post->ID); ?>&url=<?php echo get_permalink($post->ID); ?>"><i class="fa fa-twitter"></i></a></li>
+                                                <li role="presentation"><a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo get_the_title($post->ID); ?>&url=<?php echo get_permalink($post->ID); ?>"><i class="fa fa-twitter"></i></a></li>
+        										<li role="presentation" style="border-left: solid 1px #777;"><a target="_blank" href="https://plus.google.com/share?url=<?php echo get_permalink($post->ID); ?>"><i class="fa fa-google-plus"></i></a></li>
         									</ul>
         									<div class="clearfix"></div>
         								</span>

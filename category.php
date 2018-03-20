@@ -74,7 +74,7 @@
 								</div>
 								<div class="col-xs-6">
 									<p>
-										<?php the_excerpt(); ?>
+										<?php the_excerpt_max_charlength(160); ?>
 									</p>
 								</div>
 							</div>

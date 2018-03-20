@@ -8,6 +8,7 @@
         		'orderby' => 'date', 
         		'order' => 'DESC',
         		'post_status' => 'publish',
+        		'category__not_in' => array( 7 ),
         	);
         $posts = get_posts( $args );
         foreach ($posts as $post):
@@ -57,7 +58,7 @@
 					</div>
 					<div class="col-xs-6">
 						<p>
-							<?php the_excerpt($post->ID); ?>
+							<?php the_excerpt_max_charlength(160); ?>
 						</p>
 					</div>
 				</div>
@@ -70,7 +71,7 @@
 		<div class="col-xs-12 news">
             <div class="content">
                 <div class="header">
-                    <h4>Ultimas Noticias</h4>
+                    <h4>Últimas Noticias</h4>
                 </div>
 
 	            <?php 

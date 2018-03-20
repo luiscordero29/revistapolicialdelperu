@@ -15,9 +15,13 @@
 				case 'default':
 					get_template_part( 'template/page', 'default' );
 					break;
+
+				case 'page':
+					get_template_part( 'template/page' );
+					break;
 				
 				default:
-					get_template_part( 'template/page', 'default' );
+					get_template_part( 'template/page' );
 					break;
 			}
 		endwhile; 

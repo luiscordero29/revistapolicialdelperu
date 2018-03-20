@@ -1,12 +1,12 @@
 <div class="header">
-	Ultimas Noticias
+	Últimas Noticias
 </div>
 <div class="content">
 	<?php 
         $args = 
         	array(
         		'post_type' => 'post', 
-        		'numberposts' => 5, 
+        		'numberposts' => 4, 
         		'orderby' => 'date', 
         		'order' => 'DESC',
         		'post_status' => 'publish',
@@ -85,7 +85,7 @@
 		
 		$fecha = $fecha1->diff($date);
 		if ($fecha->y > 0) {
-			return $fecha->y." Año";
+			return $fecha->y." AÃ±o";
 		}else if($fecha->y < 1 && $fecha->m > 0){
 			if ($fecha->m == 1) {
 				return $fecha->m." Mes";

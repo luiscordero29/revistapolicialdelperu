@@ -51,7 +51,16 @@
 	<?php endforeach; ?>					
 </article>
 <?php
-    if ( is_active_sidebar( 'widget-aside-header' ) ) :
-        dynamic_sidebar( 'widget-aside-header' );
-    endif;
+	$widget_aside_header = true;
+	if (!is_page( 'prevencion' )) {
+		$widget_aside_header = false;
+	}
+	if (!is_page( 'orientacion' )) {
+		$widget_aside_header = false;
+	}
+	if ($widget_aside_header) {
+	    if ( is_active_sidebar( 'widget-aside-header' ) ) :
+	        dynamic_sidebar( 'widget-aside-header' );
+	    endif;
+	}
 ?>

@@ -76,8 +76,8 @@ function syi_widgets_init()
         array(
             'name'          => 'ASIDE HEADER',
             'id'            => 'widget-aside-header',
-            'before_widget' => '',
-            'after_widget'  => '',
+            'before_widget' => '<div class="row item"><div class="col-md-12">',
+            'after_widget'  => '</div></div>',
             'before_title'  => '',
             'after_title'   => '',
         )
@@ -88,7 +88,18 @@ function syi_widgets_init()
             'name'          => 'ASIDE PAGE',
             'id'            => 'widget-aside-page',
             'before_widget' => '',
-            'after_widget'  => '<br>',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'          => 'ASIDE PAGE DEFAULT',
+            'id'            => 'widget-aside-page-default',
+            'before_widget' => '',
+            'after_widget'  => '',
             'before_title'  => '',
             'after_title'   => '',
         )

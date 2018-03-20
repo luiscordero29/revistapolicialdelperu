@@ -57,14 +57,34 @@ section.top-banner-text p {
 	color: #fff;
 	border-right: 1px solid #2a7f35;
 	line-height: .8em;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#navbar-header .navbar-nav{
+    margin-top: .7%;
+    width: 100%;
+}
+
+#navbar-header .navbar-nav #li-index{
+    height: 10px;
+}
+#navbar-header .navbar-nav form{
+     margin-top: -5px;
+}
+   
+#navbar-header .navbar-nav > li{
+    margin-right: .8%;
+}   
+#navbar-header .navbar-nav > li > a{
+    padding-top: 10px;
+    padding-bottom: 12px;
 }
 
 #navbar-header .navbar-nav > li > a > img{
     margin-top: -15px;
     /* display: none; */
-    width: 35px;
+    width: 35px;  
     /* height: 20px; */
 }
 #navbar-header.navbar-default .navbar-nav>li>a>i{
@@ -266,7 +286,7 @@ a.category-link:hover{
 }
 
 #ultimas-noticias .content{
-    padding-bottom: 13%;
+    padding-bottom: 8%;
 }
 #ultimas-noticias .info-item {
     margin-left: 15px;
@@ -275,7 +295,7 @@ a.category-link:hover{
 }
 #ultimas-noticias .info-item a.title {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 #ultimas-noticias .info-item a:hover.title {
     text-decoration: none;
@@ -396,6 +416,7 @@ a.category-link:hover{
     text-align: center;
     padding: 2% 10%;
     line-height: 1.2em;
+    margin-top: 0px;
 }
 .page-full h2 {
     font-family: flamabasic;
@@ -414,4 +435,41 @@ a.category-link:hover{
 }
 .search a {
     color: #1d5925;
+}
+/*
+    Bugs : 09/03/2018;
+*/
+div.wpcf7-mail-sent-ok::before, 
+div.wpcf7-validation-errors::before {
+    display: none !important;
+}
+.navbar-form .form-control {
+    width: 220px !important;
+}
+#page-default {
+    padding-right: 0px;
+}
+#aside-page-default {
+    padding-right: 22px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+#aside-page-default .cont {
+    font-size: .9em;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 3% 0 !important;
+    color: #fff;
+}
+#aside-page-default .cont .call{
+    padding: 0% !important;
+}
+#aside-page-default .cont .call:nth-child(3){
+    font-weight: bold;
+}
+#aside-page-default .a-7 {
+    padding-bottom: 5px;
+}
+#aside-page-default .a-3 {
+    padding-bottom: 5px;
 }

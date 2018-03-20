@@ -136,6 +136,10 @@ hr {
   color: #777;
 }
 
+
+
+
+
  .share{
     float: right;
 }
@@ -147,8 +151,8 @@ hr {
  .share .nav > li {
   border-left: solid 1px #777;
 }
- .share .nav > li ~ li  {
-  border-right: solid 1px #777;
+.share .nav > li ~ li  {
+  /*border-right: solid 1px #777;*/
 }
  .share .nav > li > a:focus,
  .share .nav > li > a:hover {
@@ -397,7 +401,7 @@ a {
   background-color: #2D6325;
   color: #fff;
  /* padding-bottom: 35%;*/
-  height: 1290px;
+  /*height: 1290px;*/
 overflow: hidden;
 }
 .contenido #news_last #news_ultimas .news div.content .header {
@@ -419,7 +423,7 @@ overflow: hidden;
 .contenido #news_last #news_ultimas .news div.content .info-item a.title{
   margin: 0 !important;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.3em;
   text-decoration: none;
 }
 
