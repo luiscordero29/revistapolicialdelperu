@@ -50,12 +50,13 @@
 	</div>
 	<?php endforeach; ?>					
 </article>
+<div class="widget-aside-header">
 <?php
 	$widget_aside_header = true;
-	if (!is_page( 'prevencion' )) {
+	if (is_page( 'prevencion' )) {
 		$widget_aside_header = false;
 	}
-	if (!is_page( 'orientacion' )) {
+	if (is_page( 'orientacion' )) {
 		$widget_aside_header = false;
 	}
 	if ($widget_aside_header) {
@@ -64,3 +65,4 @@
 	    endif;
 	}
 ?>
+</div>

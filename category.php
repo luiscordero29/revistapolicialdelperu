@@ -1,27 +1,46 @@
 <?php get_header(); ?>
+<div id="version-mobile"> 
+    <div class="mobile-category-first-new">
+		<?php get_template_part( 'template/mobile-category', 'first-new' ); ?>
+    </div>
+    <div class="mobile-category-news-secundary">
+        <?php get_template_part( 'template/mobile-category', 'news-secundary' ); ?>
+    </div>
+    <div class="mobile-page-news-special">
+        <?php get_template_part( 'template/mobile-page', 'news-special' ); ?>
+    </div>
+    <div class="mobile-category-blog">
+        <?php get_template_part( 'template/mobile-category', 'blog' ); ?>
+    </div>
+    <div class="mobile-page-last-news">
+        <?php get_template_part( 'template/mobile-page', 'last-news' ); ?>
+    </div>
+    <div class="mobile-home-videos">
+        <?php get_template_part( 'template/mobile-home', 'videos' ); ?>
+    </div>
+</div>
+<div id="version-desktop" class="category">    
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="content-header-shadow"></div>
 				<div class="content-header">
 					<div class="row">
-						<div class="col-xs-8">
+						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 							<?php get_template_part( 'template/header', 'first-category' ); ?>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 							<?php get_template_part( 'template/header', 'aside' ); ?>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="container contenido">
-		
 		<hr>
 			<?php get_template_part( 'template/aside', 'news-dest-category' ); ?>
 		<hr>
-		
 		<section id="news_last" class="row">
 			<div id="news_content" class="col-xs-6">
 				<?php 
@@ -65,14 +84,14 @@
 								</div>
 							</div>
 							<div class="info_news row">
-								<div class="col-xs-6 image">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 									<?php if (has_post_thumbnail()): ?>
 										<img src="<?php the_post_thumbnail_url( 'medium' ); ?>" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
 						     		<?php else: ?>
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/image/post-especial.png" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
 						     		<?php endif ?>
 								</div>
-								<div class="col-xs-6">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 									<p>
 										<?php the_excerpt_max_charlength(160); ?>
 									</p>
@@ -98,7 +117,6 @@
 			</div>
 		</section>
 	</div>
-		
     <?php get_template_part( 'template/aside', 'videos' ); ?>			
-	
+</div>	
 <?php get_footer(); ?>

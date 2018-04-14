@@ -24,18 +24,100 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/custom/custom.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
     <?php if (is_user_logged_in()): ?>
         <style type="text/css">
             header {
             	top: 32px;
             }
+            .mobile-menu {
+                top: 32px;
+            }
+            @media (max-width: 767px) { 
+                .mobile-menu {
+                    top: 46px;
+                }
+            }
         </style>
     <?php endif;  ?>
-    <!-- Custom styles for this template -->
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/custom/custom.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
 </head>
 <body>
+<div id="version-mobile">
+    <div class="mobile-menu-background"></div>
+    <div class="mobile-menu">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="mobile-menu-logo">
+                        <center>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo.png" alt="<?php echo bloginfo('name'); ?>">
+                            </a>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <form class="mobile-menu-search" method="get"  action="<?php echo home_url( '/' ); ?>">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="Buscar" value="<?php echo get_search_query() ?>" name="s">
+                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-9 col-xs-offset-3">
+                    <div class="menu-mobile-social">
+                        <ul class="nav nav-pills">
+                            <?php echo get_mainmenu('menu-mobile-social'); ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="menu-main-mobile">
+                        <ul class="nav nav-pills nav-stacked">
+                            <?php echo get_mobile_mainmenu('menu-main-mobile'); ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="menu-mobile-close">
+                        <center>
+                            <a id="mobile-menu-close" href="#mobile-menu">
+                                <i class="fa fa-arrow-left fa-2x"></i>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="mobile-header-menu">                        
+                        <div class="btn-group">
+                            <button id="mobile-menu-open" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bars fa-3x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-xs-6">
+                    <div class="mobile-header-logo">
+                        <center>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo.png" alt="<?php echo bloginfo('name'); ?>">
+                            </a>
+                        </center>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<div id="version-desktop">    
     <?php if ( is_active_sidebar( 'widget-top-banner' ) ): ?> 
     <section class="top-banner">
         <div class="container">
@@ -79,7 +161,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">                            
                             <li class="border-right">
-                                <a target="" class="item-home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                                <a id="item-home-logo" class="item-home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo_nav.png">
                                 </a>
                             </li>                            
@@ -92,3 +174,4 @@
             </div>
         </div>
     </div>
+</div>

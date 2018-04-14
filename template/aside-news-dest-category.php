@@ -20,7 +20,7 @@
         $posts = get_posts( $args );
         foreach ($posts as $post):
     ?>
-     	<div class="item col-xs-3">
+     	<div class="item col-xs-12 col-xs-6 col-md-3 col-lg-3">
      		<a href="<?php echo get_permalink($post->ID); ?>">
      			<?php if (has_post_thumbnail()): ?>
 					<img src="<?php the_post_thumbnail_url( $post->ID, 'post-destacado' ); ?>" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">

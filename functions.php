@@ -104,6 +104,39 @@ function syi_widgets_init()
             'after_title'   => '',
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => 'ASIDE PAGE PREVENCIÓN',
+            'id'            => 'widget-aside-page-prevencion',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'          => 'BOX FOOTER PRE MOBILE',
+            'id'            => 'widget-pre-footer-mobile',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'          => 'BOX FOOTER MOBILE',
+            'id'            => 'widget-footer-mobile',
+            'before_widget' => '',
+            'after_widget'  => '',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
 }
 
 /*
@@ -116,6 +149,8 @@ function register_menus()
          
             # menus
             'menu-main' => __( 'Menu Principal' ),
+            'menu-main-mobile' => __( 'Menu Principal Mobile' ),
+            'menu-mobile-social' => __( 'Menu Mobile Social' ),
             'menu-footer-box-1' => __( 'Menu Inferior Principal' ),
             'menu-footer-box-2' => __( 'Menu inferior Secundario' ),
         )
@@ -142,6 +177,62 @@ if (!function_exists('get_mainmenu')) {
                 $menu_list .= $menu_item->title;
                 $menu_list .= '</a>';
                 $menu_list .= '</li>';
+            }
+            $menu_list .= '';
+        }
+        if (!empty($menu_list)) {
+            return $menu_list;
+        }else{
+            return '';
+        }
+    }
+}
+
+# menu
+if (!function_exists('get_mobile_mainmenu')) {
+    function get_mobile_mainmenu($menu)
+    {
+        $menu_name = $menu;
+        if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+            $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+            $menu_items = wp_get_nav_menu_items($menu->term_id);
+            $menu_list = '';
+            $submenu = false; 
+            $count = 0;
+            foreach ( (array) $menu_items as $key => $menu_item ) {                
+                if ( !$menu_item->menu_item_parent ){
+                    // save this id for later comparison with sub-menu items
+                    $parent_id = $menu_item->ID;   
+                    if (!empty($menu_items[ $count + 1 ]->menu_item_parent)){
+                        $menu_list .= '<li class="dropdown">';
+                        $menu_list .= '<a class="dropdown-toggle" class="item-' . $menu_item->ID . '" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" target="' . $menu_item->target . '" href="'. $menu_item->url .'" title="'. $menu_item->title .'">';
+                        $menu_list .= $menu_item->title;
+                        $menu_list .= '<span class="caret"></span></a>';
+                    }else{
+                        $menu_list .= '<li>';
+                        $menu_list .= '<a class="item-' . $menu_item->ID . '" target="' . $menu_item->target . '" href="'. $menu_item->url .'" title="'. $menu_item->title .'">';
+                        $menu_list .= $menu_item->title;
+                        $menu_list .= '</a>';
+                        $menu_list .= '</li>';
+                    }                        
+                }
+                if ( $parent_id == $menu_item->menu_item_parent ){
+                    if ( !$submenu ){
+                        $submenu = true;
+                        $menu_list .= '<ul class="dropdown-menu-rrp">';
+                    }
+                    $menu_list .= '<li>';
+                    $menu_list .= '<a class="item-' . $menu_item->ID . '" target="' . $menu_item->target . '" href="'. $menu_item->url .'" title="'. $menu_item->title .'">';
+                    $menu_list .= $menu_item->title;
+                    $menu_list .= '</a>';
+                    $menu_list .= '</li>';
+                    if ( $menu_items[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ){
+                        $submenu = false;
+                        $menu_list .= '</ul>';
+                        $menu_list .= '</li>';
+                    }
+                }
+                $count++;
             }
             $menu_list .= '';
         }

@@ -27,7 +27,7 @@
      			<?php endif ?>
      		</a>
 			<div class="row info">
-				<div class="col-xs-12 pd">
+				<div class="col-xs-12 pd aside-news-dest-page-meta">
 					<?php 
 						$post_categories = wp_get_post_categories( $post->ID );
 						foreach($post_categories as $c):

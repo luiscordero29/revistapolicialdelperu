@@ -33,7 +33,13 @@
         								</span>
         							</div>
         							<div class="content">
-        								<?php the_content(); ?>
+                                        <center>
+            								<?php 
+                                                $youtube = get_field('youtube');
+                                                echo do_shortcode('[embedyt]'.$youtube.'&width=840&height=400[/embedyt]');
+                                            ?>
+                                        </center>
+                                        <?php the_content(); ?>
         							</div>        								
         						</article>
         					</div>

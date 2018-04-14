@@ -49,14 +49,14 @@
 					</div>
 				</div>
 				<div class="info_news row">
-					<div class="col-xs-6 image">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<?php if (has_post_thumbnail()): ?>
 							<img src="<?php the_post_thumbnail_url( $post->ID, 'medium' ); ?>" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
 						<?php else: ?>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/image/post-especial.png" class="img-responsive" alt="<?php echo get_the_title($post->ID); ?>">
 						<?php endif ?>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<p>
 							<?php the_excerpt_max_charlength(160); ?>
 						</p>

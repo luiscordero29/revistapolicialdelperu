@@ -1,14 +1,35 @@
 <?php get_header(); ?>
+<div id="version-mobile"> 
+    <div class="mobile-home-first-new">
+		<?php get_template_part( 'template/mobile-home', 'first-new' ); ?>
+    </div>
+    <div class="mobile-home-news-secundary">
+		<?php get_template_part( 'template/mobile-home', 'news-secundary' ); ?>
+    </div>
+    <div class="mobile-home-news-special">
+		<?php get_template_part( 'template/mobile-home', 'news-special' ); ?>
+    </div>
+    <div class="mobile-home-blog">
+		<?php get_template_part( 'template/mobile-home', 'blog' ); ?>
+    </div>
+    <div class="mobile-home-last-news">
+		<?php get_template_part( 'template/mobile-home', 'last-news' ); ?>
+    </div>
+    <div class="mobile-home-videos">
+		<?php get_template_part( 'template/mobile-home', 'videos' ); ?>
+    </div>
+</div>   
+<div id="version-desktop">    
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="content-header-shadow"></div>
 				<div class="content-header">
 					<div class="row">
-						<div class="col-xs-8">
+						<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 							<?php get_template_part( 'template/header', 'first' ); ?>
 						</div>
-						<div class="col-xs-4" style="padding-left: 0px;">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-left: 0px;">
 							<?php get_template_part( 'template/header', 'aside' ); ?>
 						</div>
 					</div>
@@ -61,14 +82,14 @@
 								</div>
 							</div>
 							<div class="info_news row">
-								<div class="col-xs-6 image">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 									<?php if (has_post_thumbnail()): ?>
 										<img src="<?php the_post_thumbnail_url( 'medium' ); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>">
 						     		<?php else: ?>
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/image/post-especial.png" class="img-responsive" alt="<?php echo get_the_title(); ?>">
 						     		<?php endif ?>
 								</div>
-								<div class="col-xs-6">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 									<p>
 										<?php the_excerpt_max_charlength(160); ?>
 									</p>
@@ -94,7 +115,6 @@
 			</div>
 		</section>
 	</div>
-		
     <?php get_template_part( 'template/aside', 'videos' ); ?>			
-	
+</div>
 <?php get_footer(); ?>
